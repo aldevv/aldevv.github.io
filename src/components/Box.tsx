@@ -1,8 +1,8 @@
 import type { FC } from "react";
 import clsx from "clsx";
-interface Props {}
+interface Props { }
 const Box: FC<Props> = () => {
-  const transition = "hover:transition hover:ease-in-out hover:delay-150 hover:duration-1000 hover:scale-195";
+  const transition = "hover:transition hover:ease-in-out hover:duration-1000 hover:scale-195";
 
   return (
     <>
