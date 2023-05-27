@@ -18,7 +18,7 @@ const Box: FC<Props> = () => {
             // FILTER
           }
           <div className="row-span-full col-span-2 col-start-1 w-full h-full bg-black opacity-70"></div>
-          <div className="row-span-full col-span-2 col-end-3 h-full w-full z-10 flex flex-col justify-center items-center">
+          <div className="row-span-full col-span-2 col-end-3 h-full w-full z-10 flex flex-col justify-center items-center ">
             <span>Welcome to my page</span>
           </div>
         </div>
