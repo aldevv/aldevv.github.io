@@ -20,7 +20,9 @@ const Box: FC<
               "w-full h-full bg-cover bg-mybg bg-center ",
               zoomStyle
             )}
-          ></div>
+          >
+            <div className="bg-black w-full h-full opacity-70"></div>
+          </div>
           my
           boiz
           000000000000000000000000000000
