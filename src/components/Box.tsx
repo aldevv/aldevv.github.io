@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import clsx from "clsx";
-interface Props { }
+interface Props {}
 const Box: FC<Props> = () => {
   const transition = "hover:transition hover:ease-in-out hover:delay-150 hover:duration-1000 hover:scale-185";
 
@@ -13,15 +13,13 @@ const Box: FC<Props> = () => {
         {
           // IMAGE
         }
-        <div className={clsx("w-full h-full bg-cover bg-mybg bg-center ", transition)}>
+        <div className={clsx("grid grid-cols-2 w-full h-full bg-cover bg-mybg bg-center ", transition)}>
           {
             // FILTER
           }
-          <div className="w-full h-full bg-black opacity-70">
-            <div className="h-full w-full z-10 flex flex-col justify-center items-center">
-              <span>no sirve</span>
-              <span>no sirve2</span>
-            </div>
+          <div className="row-span-full col-span-2 col-start-1 w-full h-full bg-black opacity-70"></div>
+          <div className="row-span-full col-span-2 col-end-3 h-full w-full z-10 flex flex-col justify-center items-center">
+            <span>Welcome to my page</span>
           </div>
         </div>
       </div>
