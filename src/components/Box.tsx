@@ -1,6 +1,6 @@
 import type { FC } from "react";
 import clsx from "clsx";
-interface Props {}
+interface Props { }
 const Box: FC<Props> = () => {
   const zoomStyle = "hover:scale-185 hover:ease-in-out";
 
@@ -23,11 +23,11 @@ const Box: FC<Props> = () => {
             {
               // FILTER
             }
-            <div className="w-full h-full grid grid-cols-2">
-              <span className="h-full w-full col-span-2 col-start-1 row-span-full z-10 flex justify-center items-center">
-                no sirve
-              </span>
-              <div className="h-full w-full bg-black opacity-70 col-span-2 col-end-3 row-span-full"> </div>
+            <div className="w-full h-full bg-black opacity-70">
+              <div className="h-full w-full z-10 flex flex-col justify-center items-center">
+                <span>no sirve</span>
+                <span>no sirve2</span>
+              </div>
             </div>
           </div>
         </div>
