@@ -11,7 +11,7 @@ module.exports =
           {
             backgroundImage:
               {
-                mybg: "url(./src/assets/bg.jpg)",
+                mybg: "url(/src/assets/bg.jpg)",
                 // mybg: "url(./src/assets/placeholder.jpg)",
               },
             scale:

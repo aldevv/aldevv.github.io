@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { cv } from "../assets/cv_backend_eng.pdf";
+import cv from "../assets/cv_backend_eng.pdf";
 
 interface Props {}
 const Nav: FC<Props> = () => {
@@ -9,7 +9,7 @@ const Nav: FC<Props> = () => {
       <a className={buttonStyle} href="/">
         home
       </a>
-      <a className={buttonStyle} href="/src/assets/cv_backend_eng.pdf" download>
+      <a className={buttonStyle} href={cv} download>
         cv
       </a>
       <a className={buttonStyle} href="/contact">
