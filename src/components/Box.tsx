@@ -2,32 +2,25 @@ import type { FC } from "react";
 import clsx from "clsx";
 interface Props { }
 const Box: FC<Props> = () => {
-  const zoomStyle = "hover:scale-185 hover:ease-in-out";
+  const transition = "hover:transition hover:ease-in-out hover:delay-150 hover:duration-1000 hover:scale-185";
 
   return (
     <>
       {
-        //TODO: get this div to the layout
+        // BOX
       }
-      <div className="flex justify-center items-center text-3xl backdrop-blur-md w-full h-full text-white ">
+      <div className={clsx("h-2/4 w-2/4 overflow-hidden rounded-2xl border-2 border-white shadow-blue-800 shadow-lg")}>
         {
-          // BOX
+          // IMAGE
         }
-        <div
-          className={clsx("h-2/4 w-2/4 overflow-hidden rounded-2xl border-4 border-white shadow-blue-800 shadow-lg")}
-        >
+        <div className={clsx("w-full h-full bg-cover bg-mybg bg-center ", transition)}>
           {
-            // IMAGE
+            // FILTER
           }
-          <div className={clsx("w-full h-full bg-cover bg-mybg bg-center ", zoomStyle)}>
-            {
-              // FILTER
-            }
-            <div className="w-full h-full bg-black opacity-70">
-              <div className="h-full w-full z-10 flex flex-col justify-center items-center">
-                <span>no sirve</span>
-                <span>no sirve2</span>
-              </div>
+          <div className="w-full h-full bg-black opacity-70">
+            <div className="h-full w-full z-10 flex flex-col justify-center items-center">
+              <span>no sirve</span>
+              <span>no sirve2</span>
             </div>
           </div>
         </div>
