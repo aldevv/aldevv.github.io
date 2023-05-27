@@ -1,7 +1,7 @@
 import type { FC } from "react";
 import clsx from "clsx";
 interface Props {}
-const Box: FC<Props> = () => {
+const About: FC<Props> = () => {
   const transition = "hover:transition hover:ease-in-out hover:delay-150 hover:duration-1000 hover:scale-195";
 
   return (
@@ -19,7 +19,7 @@ const Box: FC<Props> = () => {
           }
           <div className="row-span-full col-span-2 col-start-1 w-full h-full bg-black opacity-70"></div>
           <div className="row-span-full col-span-2 col-end-3 h-full w-full z-10 flex flex-col justify-center items-center ">
-            <span>Welcome to my page</span>
+            <p>I write code for a living</p>
           </div>
         </div>
       </div>
@@ -27,4 +27,4 @@ const Box: FC<Props> = () => {
   );
 };
 
-export default Box;
+export default About;
